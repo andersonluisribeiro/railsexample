@@ -3,3 +3,7 @@ rvm:
   - 2.2.0
 gemfile:
   - Gemfile
+services:
+  - mysql
+before_script:
+  - mysql -e 'create database railsexample_test;'
