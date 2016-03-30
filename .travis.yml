@@ -4,9 +4,9 @@ rvm:
 gemfile:
   - Gemfile
 services:
-  - mysql
+  - postgresql
 before_script:
-  - mysql -e 'create database railsexample_test;'
+  - psql -c 'create database railsexample_test;' -U postgres  
 deploy:
   provider: heroku
   api_key:
