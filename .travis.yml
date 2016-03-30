@@ -18,5 +18,5 @@ notifications:
     recipients:
       - anderson.luis.rib@gmail.com
       - anderson_lr@hotmail.com
-    on_success: [always|never|change] # default: always
-    on_failure: [always|never|change] # default: always  
+    on_success: always
+    on_failure: always  
