@@ -17,6 +17,13 @@ default: &default
   password: root
   socket: /var/run/mysqld/mysqld.sock
 
+postgree: &postgree
+  host: ec2-54-225-112-119.compute-1.amazonaws.com
+  adapter: postgresql
+  encoding: unicode
+  username: owdrgcqylzxwh
+  password: 34jVdFhB8GAhTmw_AF8lKPfWHf
+
 
 development:
   <<: *default
@@ -51,7 +58,5 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: railsexample_production
-  username: root
-  password: root
+  <<: *postgree
+  database: d5nebr7trin35v 
