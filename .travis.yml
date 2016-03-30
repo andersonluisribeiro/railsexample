@@ -12,3 +12,11 @@ deploy:
   api_key:
     secure: "35ff9cbd-90ed-4951-a6c4-d6d970c12878"  
   run: "rake db:migrate"  
+
+notifications:
+  email:
+    recipients:
+      - anderson.luis.rib@gmail.com
+      - anderson_lr@hotmail.com
+    on_success: [always|never|change] # default: change
+    on_failure: [always|never|change] # default: always  
