@@ -10,6 +10,7 @@ class CategoriaController < ApplicationController
   # GET /categoria/1
   # GET /categoria/1.json
   def show
+    
   end
 
   # GET /categoria/new
