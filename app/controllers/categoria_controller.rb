@@ -4,8 +4,7 @@ class CategoriaController < ApplicationController
   # GET /categoria
   # GET /categoria.json
   def index
-    @categoria = Categorium.all
-    
+    @categoria = Categorium.all    
   end
 
   # GET /categoria/1
